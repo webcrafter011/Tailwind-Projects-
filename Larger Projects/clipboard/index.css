@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@theme {
+    --color-primary: #26BAA4;
+    --color-secondary: #6173FF;
+    --font-PT: "PT Sans", serif;
+    
+}
+
+body {
+    background-image: url(images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+@media screen and (max-width: 768px){
+    body {
+        background-image: url(images/bg-header-mobile.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
+
+
+h3 {
+    @apply max-w-[350px] md:max-w-6xl mb-8 text-3xl text-gray-700 md:text-4xl mx-auto font-bold;
+}
+
+.content {
+    @apply mx-auto text-xl max-w-3xl mb-6 text-gray-400;
+}
+
+h4 {
+    @apply text-xl font-bold text-gray-600
+}
+
+.container {
+    @apply max-w-6xl mx-auto text-center mb-40 px-10 pt-16;
+}
+.sub-container {
+    @apply text-center flex flex-col gap-2 md:w-64 lg:text-left;
+}
