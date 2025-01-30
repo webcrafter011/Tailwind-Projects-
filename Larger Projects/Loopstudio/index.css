@@ -19,3 +19,28 @@
     }
 
 }
+
+.hamburger {
+    display: flex;
+    align-items: start;
+    width: 24px;
+    height: 24px;
+}
+
+.upper-row,
+.middle-row,
+.lower-row {
+    width: 100%;
+    height: 2px;
+    background-color: white;
+}
+
+.middle-row {
+    position: relative;
+    top: 7px;
+}
+
+.lower-row {
+    position: relative;
+    top: 14px;
+}
